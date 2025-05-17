@@ -1,0 +1,4 @@
+/get_parameter_node:
+  ros__parameters:
+    kinect_height: 0.34
+    kinect_pitch: 1.54

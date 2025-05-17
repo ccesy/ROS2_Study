@@ -1,0 +1,9 @@
+<!-- 组合小车底盘与摄像头 -->
+<robot name="my_car_camera" xmlns:xacro="http://wiki.ros.org/xacro">
+  <xacro:include filename="$(find gazebo_env)/urdf/base.xacro" />
+  <xacro:include filename="$(find gazebo_env)/urdf/my_base.xacro" />
+  <xacro:include filename="$(find gazebo_env)/urdf/my_camera.xacro" />
+  <xacro:include filename="$(find gazebo_env)/urdf/my_laser.xacro" />
+  <xacro:include filename="$(find gazebo_env)/urdf/my_car_move.xacro" />
+  <xacro:include filename="$(find gazebo_env)/urdf/my_sensors.xacro" />
+</robot>

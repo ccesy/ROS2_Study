@@ -1,0 +1,6 @@
+string name
+---
+bool in_class
+bool boy
+int32 age
+string personality

@@ -1,0 +1,8 @@
+#goal definition
+int32 whole_distance
+---
+#result definition
+bool is_finish
+---
+#feedback
+int32 moving_meter

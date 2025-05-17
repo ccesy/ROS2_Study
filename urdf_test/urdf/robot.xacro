@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<robot name="my_robot" xmlns:xacro="http://wiki.ros.org/xacro">
+
+  <!-- 包含三个组件xacro文件 -->
+  <xacro:include filename="$(find urdf_test)/urdf/xacar.xacro" />
+  <xacro:include filename="$(find urdf_test)/urdf/camera.xacro" />
+  <xacro:include filename="$(find urdf_test)/urdf/laser.xacro" />
+
+  <!-- 调用底盘宏（xacar.xacro中已定义所有组件） -->
+  <xacro:property name="base_link_length" value="0.08" /> <!-- 需要在主文件中定义，因为camera.xacro和laser.xacro依赖此变量 -->
+  
+  <!-- 调用各组件（xacar.xacro中的宏已在包含时自动执行） -->
+  
+  <!-- 添加摄像头 -->
+  <xacro:property name="camera_x" value="0.08" /> <!-- 调整摄像头位置 -->
+  
+  <!-- 添加雷达 -->
+  <xacro:property name="support_length" value="0.15" /> <!-- 支架长度 -->
+
+</robot>
